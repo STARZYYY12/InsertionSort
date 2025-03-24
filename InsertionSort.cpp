@@ -71,16 +71,6 @@ void input()
     cout << endl;
    }
 
-   int main()
-   {
-    input();
-    insertionSort();
-    display();
-    system("Pause");
-    return 0;
-
-   }
-   
 
     
 
