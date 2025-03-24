@@ -33,4 +33,54 @@ void input()
 }
     
     void insertionSort()
+    {
+
+        int temp;
+        int j, i;
+
+        for (i =1; i <= n-1; i++)
+        {
+
+            temp = arr[i];
+
+            j = i -1;
+
+            while (j >= 0 && arr[j] > temp)
+            {
+                arr[j + 1] = arr[j];
+                j--;
+
+            }
+        arr[j + 1] = temp;
+        }
+   }
+    
+   void display()
+   {
+    cout << endl;
+    cout << "=======================" << endl;
+    cout << "Total Passs = " << n - 1 << endl;
+    cout << "=======================" << endl;
+    cout << "Element Array yang telah tersusun" << endl;
+    cout << "==========================" << endl;
+    
+    for (int j = 0; j < n; j++)
+    {
+        cout <<arr[j] << endl;
+    }
+    cout << endl;
+   }
+
+   int main()
+   {
+    input();
+    insertionSort();
+    display();
+    system("Pause");
+    return 0;
+
+   }
    
+
+    
+
